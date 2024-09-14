@@ -1,27 +1,31 @@
 # Breast Cancer Prediction using Neural Networks
 
-This project implements a neural network model to predict breast cancer diagnosis (malignant or benign) based on various features.
+This project implements a neural network model to predict breast cancer diagnoses (malignant or benign) based on various tumor characteristics.
 
 ## Dataset
 
-The project utilizes the breast cancer dataset from scikit-learn. This dataset contains features related to tumor characteristics.
+The project utilizes the breast cancer dataset from scikit-learn. This dataset contains 30 features related to tumor characteristics, including metrics such as radius, texture, perimeter, area, and more.
 
-## Model
+## Model Architecture
 
-The model is a simple neural network with the following architecture:
+The model is designed as follows:
 
-- Flatten layer: To convert the input data into a 1D array.
-- Dense layer: With 20 neurons and ReLU activation function.
-- Dense layer: Output layer with 2 neurons and sigmoid activation function.
+- **Flatten Layer**: Converts the input data into a 1D array.
+- **Dense Layer**: Contains 20 neurons with a ReLU activation function.
+- **Output Layer**: Has 2 neurons with a sigmoid activation function to classify the tumor as either malignant or benign.
 
 ## Training
 
-The model is trained using the Adam optimizer and sparse categorical cross-entropy loss function.
+The model is trained using:
+- **Optimizer**: Adam optimizer
+- **Loss Function**: Sparse categorical cross-entropy
 
 ## Evaluation
 
-The model's performance is evaluated using accuracy.
+The model's performance is evaluated based on accuracy, achieving approximately 97.7% accuracy on the test set.
 
 ## Usage
 
-This project provides a basic example of how to build and train a neural network for classification. It can be used as a starting point for further development and improvement.
+This project serves as a foundational example of building and training a neural network for binary classification tasks. It can be further developed and improved for more complex applications.
+
+To run the project, ensure you have the required libraries installed and follow the code structure provided in the notebook.
